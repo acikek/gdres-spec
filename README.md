@@ -58,7 +58,9 @@ The manifest schema is defined as a [JSON Schema](https://json-schema.org/) in [
 - `metadata.contact` is a free-form object, but GDRes explicitly defines `homepage`, `sources`, and `issues` as URL strings.
 - The `custom` object mirrors the structure of the `custom` folder specified above, with keys being software IDs mapping to free-form objects.
 
-#### Notes
+> **Note**: The manifest schema is inspired by the [`quilt.mod.json`](https://github.com/QuiltMC/rfcs/blob/main/specification/0002-quilt.mod.json.md) format.
 
-- Somewhat inspired by the [`quilt.mod.json`](https://github.com/QuiltMC/rfcs/blob/main/specification/0002-quilt.mod.json.md) format.
+# License
+
+MIT © 2024 acikek
 
