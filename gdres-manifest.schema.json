@@ -1,0 +1,86 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/acikek/gdres-spec/gdres-manifest.schema.json",
+    "title": "GDRes Manifest",
+    "description": "Manifest file (gdres.pack.json) for GDRes, a Geometry Dash Resource Pack format",
+    "type": "object",
+    "properties": {
+        "schema_version": {
+            "description": "The manifest schema version",
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "pack_version": {
+            "description": "The resource pack semantic version",
+            "type": "string"
+        },
+        "game_versions": {
+            "description": "Supported Geometry Dash game versions",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "suggests": {
+            "description": "Suggested resource packs",
+            "type": "object",
+            "patternProperties": {
+                ".*": {
+                    "type": "string"
+                }
+            }
+        },
+        "custom": {
+            "description": "Custom extension properties",
+            "type": "object",
+            "patternProperties": {
+                ".*": {
+                    "type": "object"
+                }
+            }
+        },
+        "metadata": {
+            "description": "Resource pack metadata",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "Human-friendly display name",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "Brief resource pack summary",
+                    "type": "string"
+                },
+                "authors": {
+                    "description": "Resource pack authors",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "uniqueItems": true
+                },
+                "contact": {
+                    "description": "Contact methods for pack authors",
+                    "type": "object"
+                },
+                "readme": {
+                    "description": "Relative file path of the 'readme' file",
+                    "type": "string"
+                },
+                "license": {
+                    "description": "Relative file path of the license file",
+                    "type": "string"
+                },
+                "icon": {
+                    "description": "Relative file path of the icon image",
+                    "type": "string"
+                }
+            }
+        }
+    },
+    "required": [
+        "schema_version",
+        "pack_version"
+    ]
+}

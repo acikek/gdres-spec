@@ -1,0 +1,15 @@
+{
+    "schema_version": 1,
+    "pack_version": "1.0.0",
+    "game_versions": [
+        "2.204",
+        "2.205"
+    ],
+    "metadata": {
+        "name": "GDRes Example Pack",
+        "description": "An example pack ",
+        "authors": [
+            "acikek"
+        ]
+    }
+}

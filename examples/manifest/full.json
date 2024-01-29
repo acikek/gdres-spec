@@ -1,0 +1,28 @@
+{
+    "schema_version": 1,
+    "pack_version": "1.0.0",
+    "game_versions": [
+        "2.204",
+        "2.205"
+    ],
+    "metadata": {
+        "name": "My Awesome Pack",
+        "description": "This is the best pack of all time",
+        "authors": [
+            "Me!"
+        ],
+        "contact": {
+            "homepage": "https://example.com",
+            "sources": "https://github.com/geode-sdk/geode"
+        },
+        "icon": "image.png"
+    },
+    "suggests": {
+        "my_other_pack": "*"
+    },
+    "custom": {
+        "geode_textureldr": {
+            "mod_version": "2.3.4"
+        }
+    }
+}
