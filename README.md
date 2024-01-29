@@ -31,7 +31,7 @@ The ID of a resource pack is the file name (without the extension). The file nam
 
 The resource pack file **must** contain:
 - `gdres.pack.json`: The manifest file.
-- `resources/` **or** `Resources/`: The resource files.
+- `resources/`: The resource files. Note: `Resources/` is **not** accepted.
 
 The file may contain these items:
 - A 'readme' file.
